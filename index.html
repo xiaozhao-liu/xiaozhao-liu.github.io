@@ -3,62 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Xiaozhao Liu - Battery materials, lab automation, and AI-driven materials discovery." />
+  <meta name="description" content="Xiaozhao Liu - battery materials, lab automation, and AI-driven materials discovery." />
   <title>Xiaozhao Liu | Home</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container nav-container">
-      <a class="site-title" href="index.html">Xiaozhao Liu</a>
+    <div class="nav-shell">
+      <a class="brand" href="index.html">Xiaozhao Liu</a>
       <nav class="nav-links" aria-label="Main navigation">
         <a class="active" href="index.html">Home</a>
-        <a href="updates.html">Updates</a>
         <a href="research.html">Research</a>
         <a href="publications.html">Publications</a>
       </nav>
     </div>
   </header>
 
-  <main class="page-main">
-    <section class="content-block home-block">
-      <div class="intro-text">
-        <p>
-          Welcome to my research website. I am interested in developing compositionally complex
-          materials for next-generation battery applications by combining solid-state synthesis,
-          electrochemistry, structural characterization, lab automation, and machine learning.
-        </p>
+  <main class="site-main">
+    <div class="home-grid">
+      <aside class="profile-panel">
+        <img class="profile-photo" src="https://avatars.githubusercontent.com/u/125338964?v=4" alt="Xiaozhao Liu profile photo" />
+        <h1>Xiaozhao Liu</h1>
+        <p class="profile-role">PhD Student</p>
+        <p class="profile-affiliation">IMS, Vanderbilt University</p>
 
-        <p>
-          My current research focuses on sodium-ion and lithium-ion battery cathode materials,
-          battery safety, high-throughput synthesis and characterization, and data-driven
-          materials discovery.
-        </p>
-
-        <p>
-          I use this website to summarize research directions, selected updates, publications,
-          and useful academic links.
-        </p>
-
-        <div class="link-row">
-          <a href="https://scholar.google.com/citations?user=CbV5CPsAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-          <a href="https://www.researchgate.net/profile/Xiaozhao-Liu-3/research" target="_blank" rel="noopener noreferrer">ResearchGate</a>
-          <a href="https://www.linkedin.com/in/xiaozhao-liu-083b06285/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <div class="icon-row" aria-label="Academic profile links">
+          <a class="icon-link" href="https://scholar.google.com/citations?user=CbV5CPsAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">GS</a>
+          <a class="icon-link" href="https://www.researchgate.net/profile/Xiaozhao-Liu-3/research" target="_blank" rel="noopener noreferrer" aria-label="ResearchGate">RG</a>
+          <a class="icon-link" href="https://www.linkedin.com/in/xiaozhao-liu-083b06285/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
         </div>
-      </div>
-
-      <aside class="summary-box">
-        <div class="profile-mark">XL</div>
-        <h2>Xiaozhao Liu</h2>
-        <p>Battery Materials · Lab Automation · AI-Driven Materials Discovery</p>
       </aside>
-    </section>
+
+      <section class="home-content">
+        <section class="content-card">
+          <p class="section-label">About me</p>
+          <h2>About me</h2>
+          <p>
+            I am currently a PhD student at IMS at Vanderbilt University. My research focuses on
+            developing compositionally complex materials for battery applications by leveraging
+            automation and artificial intelligence.
+          </p>
+        </section>
+
+        <section class="content-card">
+          <p class="section-label">Focus</p>
+          <h2>Research interests</h2>
+          <div class="tag-list">
+            <span>Battery Materials</span>
+            <span>Lab Automation</span>
+            <span>AI-Driven Materials Discovery</span>
+            <span>Battery Safety</span>
+          </div>
+        </section>
+
+        <section class="content-card" id="news">
+          <p class="section-label">News</p>
+          <h2>News</h2>
+          <div class="news-item">
+            <time datetime="2026-07-03">Jul 3, 2026</time>
+            <p>My personal research website is online.</p>
+          </div>
+        </section>
+      </section>
+    </div>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>© 2026 Xiaozhao Liu</p>
-    </div>
+    <p>© 2026 Xiaozhao Liu</p>
   </footer>
 </body>
 </html>
