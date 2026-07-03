@@ -5,17 +5,21 @@
   --muted: #6b7280;
   --line: #e5e7eb;
   --bg: #ffffff;
-  --soft: #f8fafc;
   --max-width: 1120px;
-  --content-width: 760px;
+  --content-width: 880px;
 }
 
 * {
   box-sizing: border-box;
 }
 
+html,
 body {
   margin: 0;
+  padding: 0;
+}
+
+body {
   color: var(--text);
   background: var(--bg);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
@@ -36,6 +40,8 @@ a:hover {
 .site-container {
   width: min(88%, var(--max-width));
   margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .site-header {
@@ -83,7 +89,8 @@ a:hover {
 }
 
 .main-content {
-  padding: 64px 0 68px;
+  padding-top: 64px;
+  padding-bottom: 68px;
 }
 
 .profile-layout {
@@ -206,15 +213,16 @@ a:hover {
 
 .page-content {
   max-width: var(--content-width);
-  padding: 64px 0 68px;
+  padding-top: 64px;
+  padding-bottom: 68px;
 }
 
 .page-content h1 {
-  margin-bottom: 26px;
+  margin-bottom: 18px;
 }
 
 .lead {
-  margin: 0 0 40px;
+  margin: 0 0 34px;
 }
 
 .research-topic {
@@ -240,7 +248,7 @@ a:hover {
 
 .publication-icons {
   justify-content: flex-start;
-  margin: 18px 0 42px;
+  margin: 18px 0 34px;
 }
 
 .publication-block {
@@ -250,22 +258,59 @@ a:hover {
 
 .publication-list {
   margin: 0;
-  padding-left: 24px;
+  padding: 0;
+  list-style: none;
+  counter-reset: pub-counter 3;
 }
 
 .publication-list li {
-  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 46px 1fr;
+  gap: 14px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
 }
 
-.publication-list strong,
+.publication-list li::before {
+  counter-increment: pub-counter -1;
+  content: counter(pub-counter);
+  color: #24292f;
+  font-size: 18px;
+}
+
+.pub-title-line {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.pub-title-line i {
+  color: #444444;
+  font-size: 16px;
+}
+
+.publication-list strong {
+  display: inline;
+  color: var(--blue);
+  font-weight: 500;
+}
+
 .publication-list span {
   display: block;
+}
+
+.pub-authors {
+  margin-top: 3px;
+}
+
+.pub-venue {
+  font-weight: 500;
 }
 
 .site-footer {
   width: min(88%, var(--max-width));
   margin: 0 auto;
-  padding: 24px 0 34px;
+  padding: 24px 24px 34px;
   border-top: 1px solid var(--line);
   text-align: center;
 }
@@ -279,6 +324,12 @@ a:hover {
 @media (max-width: 850px) {
   body {
     font-size: 16px;
+  }
+
+  .site-container {
+    width: 100%;
+    padding-left: 22px;
+    padding-right: 22px;
   }
 
   .nav-bar {
@@ -307,7 +358,8 @@ a:hover {
   }
 
   .news-row,
-  .timeline-item {
+  .timeline-item,
+  .publication-list li {
     grid-template-columns: 1fr;
     gap: 4px;
   }
