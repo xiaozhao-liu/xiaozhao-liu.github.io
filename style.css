@@ -1,10 +1,11 @@
 :root {
-  --blue: #0072f0;
-  --blue-dark: #0057b8;
-  --text: #24292f;
-  --muted: #6b7280;
-  --line: #e5e7eb;
-  --bg: #ffffff;
+  --navy: #1F3A5F;
+  --soft-blue: #4A90A4;
+  --bg: #F7F8FA;
+  --card: #FFFFFF;
+  --text: #2F3437;
+  --muted: #6B7280;
+  --line: #E5E7EB;
   --max-width: 1120px;
   --content-width: 880px;
 }
@@ -28,12 +29,12 @@ body {
 }
 
 a {
-  color: var(--blue);
+  color: var(--soft-blue);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--blue-dark);
+  color: var(--navy);
   text-decoration: underline;
 }
 
@@ -45,7 +46,7 @@ a:hover {
 }
 
 .site-header {
-  background: #ffffff;
+  background: var(--card);
 }
 
 .nav-bar {
@@ -57,13 +58,15 @@ a:hover {
 }
 
 .site-title {
-  color: var(--blue);
+  color: var(--navy);
   font-size: 26px;
   font-weight: 700;
+  border-bottom: 3px solid var(--soft-blue);
+  padding-bottom: 3px;
 }
 
 .site-title:hover {
-  color: var(--blue-dark);
+  color: var(--soft-blue);
   text-decoration: none;
 }
 
@@ -74,9 +77,9 @@ a:hover {
 }
 
 .nav-links a {
-  color: var(--blue);
+  color: var(--navy);
   padding: 8px 15px;
-  border-radius: 5px;
+  border-radius: 8px;
   font-size: 17px;
   font-weight: 500;
 }
@@ -84,7 +87,7 @@ a:hover {
 .nav-links a:hover,
 .nav-links a.active {
   color: #ffffff;
-  background: var(--blue);
+  background: var(--navy);
   text-decoration: none;
 }
 
@@ -98,6 +101,10 @@ a:hover {
   grid-template-columns: 310px minmax(0, 1fr);
   gap: 64px;
   align-items: start;
+  background: var(--card);
+  padding: 32px;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
 }
 
 .profile-sidebar {
@@ -113,11 +120,14 @@ a:hover {
 }
 
 .profile-sidebar h1 {
+  display: inline-block;
   margin: 0 0 6px;
-  color: #111827;
+  color: var(--navy);
   font-size: 34px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: -0.03em;
+  border-bottom: 3px solid var(--soft-blue);
+  padding-bottom: 4px;
 }
 
 .profile-role {
@@ -128,7 +138,7 @@ a:hover {
 
 .profile-affiliation {
   margin: 8px 0 24px;
-  color: var(--blue);
+  color: var(--soft-blue);
   font-size: 19px;
   font-weight: 500;
 }
@@ -145,12 +155,12 @@ a:hover {
   justify-content: center;
   width: 34px;
   height: 34px;
-  color: var(--blue);
+  color: var(--navy);
   font-size: 30px;
 }
 
 .profile-icons a:hover {
-  color: var(--blue-dark);
+  color: var(--soft-blue);
   text-decoration: none;
 }
 
@@ -165,9 +175,9 @@ a:hover {
 .page-section h2,
 .page-content h1 {
   margin: 0 0 16px;
-  color: #111827;
+  color: var(--navy);
   font-size: 42px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.18;
   letter-spacing: -0.04em;
 }
@@ -177,7 +187,7 @@ a:hover {
 .research-topic p,
 .timeline-text,
 .publication-list span {
-  color: #333333;
+  color: var(--text);
 }
 
 .two-column-section {
@@ -207,7 +217,7 @@ a:hover {
 
 .news-date,
 .timeline-date {
-  color: var(--blue);
+  color: var(--soft-blue);
   font-weight: 600;
 }
 
@@ -215,6 +225,11 @@ a:hover {
   max-width: var(--content-width);
   padding-top: 64px;
   padding-bottom: 68px;
+  background: var(--card);
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  margin-top: 48px;
+  margin-bottom: 48px;
 }
 
 .page-content h1 {
@@ -233,7 +248,7 @@ a:hover {
 .research-topic h2,
 .publication-block h2 {
   margin: 0 0 10px;
-  color: #111827;
+  color: var(--navy);
   font-size: 28px;
   font-weight: 700;
 }
@@ -274,25 +289,14 @@ a:hover {
 .publication-list li::before {
   counter-increment: pub-counter -1;
   content: counter(pub-counter);
-  color: #24292f;
+  color: var(--text);
   font-size: 18px;
-}
-
-.pub-title-line {
-  display: flex;
-  gap: 8px;
-  align-items: baseline;
-}
-
-.pub-title-line i {
-  color: #444444;
-  font-size: 16px;
 }
 
 .publication-list strong {
   display: inline;
-  color: var(--blue);
-  font-weight: 500;
+  color: var(--soft-blue);
+  font-weight: 600;
 }
 
 .publication-list span {
@@ -317,7 +321,7 @@ a:hover {
 
 .site-footer p {
   margin: 0;
-  color: #7a7a7a;
+  color: var(--muted);
   font-size: 15px;
 }
 
