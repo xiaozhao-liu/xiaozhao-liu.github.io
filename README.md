@@ -18,3 +18,4 @@ This repository contains the source files for a personal research website built 
 ## Notes
 
 The website code is released under the MIT License. Research content, publications, figures, and personal materials remain the property of the author unless otherwise stated.
+
