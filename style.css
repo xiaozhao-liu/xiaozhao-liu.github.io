@@ -307,6 +307,13 @@ a:hover {
   margin-top: 3px;
 }
 
+.my-name {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  font-weight: 600;
+}
+
 .pub-venue {
   font-weight: 500;
 }
