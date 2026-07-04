@@ -426,8 +426,9 @@ a:hover {
 .note-date {
   flex: 0 0 auto;
   color: var(--soft-blue);
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 600;
+  line-height: 1.25;
 }
 
 .note-date::before {
