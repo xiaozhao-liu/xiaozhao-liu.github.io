@@ -375,6 +375,42 @@ a:hover {
   font-weight: 500;
 }
 
+.notes-list {
+  border-top: 1px solid var(--line);
+}
+
+.note-item {
+  padding: 22px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: baseline;
+}
+
+.note-header h2 {
+  margin: 0;
+  color: var(--navy);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.note-date {
+  flex: 0 0 auto;
+  color: var(--soft-blue);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.note-item p {
+  margin: 8px 0 0;
+  color: var(--text);
+}
+
 .site-footer {
   width: min(88%, var(--max-width));
   margin: 0 auto;
@@ -431,8 +467,18 @@ a:hover {
 
   .news-row,
   .timeline-item,
-  .publication-list li {
+  .publication-list li,
+  .note-header {
     grid-template-columns: 1fr;
     gap: 4px;
+  }
+
+  .note-header {
+    display: block;
+  }
+
+  .note-date {
+    display: block;
+    margin-top: 4px;
   }
 }
