@@ -164,6 +164,34 @@ a:hover {
   text-decoration: none;
 }
 
+.rg-icon {
+  position: relative;
+  display: inline-block;
+  width: 32px;
+  height: 34px;
+  color: var(--navy);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.08em;
+}
+
+.rg-icon::after {
+  content: "G";
+  position: absolute;
+  top: -7px;
+  right: -8px;
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.profile-icons a:hover .rg-icon {
+  color: var(--soft-blue);
+}
+
 .profile-main {
   max-width: 760px;
 }
