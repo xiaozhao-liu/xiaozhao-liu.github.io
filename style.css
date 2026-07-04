@@ -201,7 +201,8 @@ a:hover {
 }
 
 .page-section h2,
-.page-content h1 {
+.page-content h1,
+.home-news h2 {
   margin: 0 0 16px;
   color: var(--navy);
   font-size: 42px;
@@ -233,6 +234,10 @@ a:hover {
   margin-bottom: 6px;
 }
 
+.contact-line {
+  margin: 0 0 8px;
+}
+
 .news-row,
 .timeline-item {
   display: grid;
@@ -247,6 +252,12 @@ a:hover {
 .timeline-date {
   color: var(--soft-blue);
   font-weight: 600;
+}
+
+.home-news {
+  margin-top: 42px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
 }
 
 .page-content {
@@ -393,7 +404,8 @@ a:hover {
   }
 
   .page-section h2,
-  .page-content h1 {
+  .page-content h1,
+  .home-news h2 {
     font-size: 34px;
   }
 
