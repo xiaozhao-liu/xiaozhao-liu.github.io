@@ -295,6 +295,11 @@ a:hover {
   border-top: 1px solid var(--line);
 }
 
+.research-topic:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
 .research-topic h2,
 .publication-block h2 {
   margin: 0 0 10px;
