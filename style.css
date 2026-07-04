@@ -202,7 +202,8 @@ a:hover {
 
 .page-section h2,
 .page-content h1,
-.home-news h2 {
+.home-news h2,
+.home-resources h2 {
   margin: 0 0 16px;
   color: var(--navy);
   font-size: 26px;
@@ -254,10 +255,20 @@ a:hover {
   font-weight: 600;
 }
 
-.home-news {
+.home-news,
+.home-resources {
   margin-top: 42px;
   padding-top: 28px;
   border-top: 1px solid var(--line);
+}
+
+.resource-list {
+  margin: 0;
+  padding-left: 24px;
+}
+
+.resource-list li {
+  margin-bottom: 6px;
 }
 
 .page-content {
@@ -407,6 +418,7 @@ a:hover {
   .page-section h2,
   .page-content h1,
   .home-news h2,
+  .home-resources h2,
   .research-topic h2,
   .publication-block h2 {
     font-size: 26px;
