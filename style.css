@@ -375,26 +375,50 @@ a:hover {
   font-weight: 500;
 }
 
-.notes-list {
-  border-top: 1px solid var(--line);
+.note-section {
+  margin-top: 32px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fbfcfd;
 }
 
-.note-item {
-  padding: 22px 0;
-  border-bottom: 1px solid var(--line);
+.note-section h2 {
+  margin: 0 0 8px;
+  color: var(--navy);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
-.note-header {
+.note-section-intro {
+  margin: 0 0 20px;
+  color: var(--muted);
+}
+
+.note-card {
+  padding: 20px 22px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--card);
+}
+
+.note-card + .note-card {
+  margin-top: 16px;
+}
+
+.note-card-header {
   display: flex;
   justify-content: space-between;
   gap: 20px;
   align-items: baseline;
+  margin-bottom: 8px;
 }
 
-.note-header h2 {
+.note-card-header h3 {
   margin: 0;
   color: var(--navy);
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
   line-height: 1.25;
 }
@@ -406,8 +430,8 @@ a:hover {
   font-weight: 600;
 }
 
-.note-item p {
-  margin: 8px 0 0;
+.note-card p {
+  margin: 0;
   color: var(--text);
 }
 
@@ -461,19 +485,23 @@ a:hover {
   .home-news h2,
   .home-resources h2,
   .research-topic h2,
-  .publication-block h2 {
+  .publication-block h2,
+  .note-section h2 {
     font-size: 26px;
   }
 
   .news-row,
   .timeline-item,
-  .publication-list li,
-  .note-header {
+  .publication-list li {
     grid-template-columns: 1fr;
     gap: 4px;
   }
 
-  .note-header {
+  .note-section {
+    padding: 22px;
+  }
+
+  .note-card-header {
     display: block;
   }
 
